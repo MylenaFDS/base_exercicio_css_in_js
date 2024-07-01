@@ -1,21 +1,21 @@
-import React, { FormEvent, useState, ChangeEvent } from "react";
-import { Form, Campo, BtnPesquisar } from "./styles";
+import React, { FormEvent, useState, ChangeEvent } from 'react'
+import { Form, Campo, BtnPesquisar } from './styles'
 
 type Props = {
-  aoPesquisar: (termo: string) => void;
-};
+  aoPesquisar: (termo: string) => void
+}
 
 const FormVagas = ({ aoPesquisar }: Props) => {
-  const [termo, setTermo] = useState("");
+  const [termo, setTermo] = useState('')
 
   const aoEnviarForm = (e: FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    aoPesquisar(termo.toLocaleLowerCase());
-  };
+    e.preventDefault()
+    aoPesquisar(termo.toLocaleLowerCase())
+  }
 
   const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
-    setTermo(e.target.value);
-  };
+    setTermo(e.target.value)
+  }
 
   return (
     <Form onSubmit={aoEnviarForm}>
@@ -26,8 +26,7 @@ const FormVagas = ({ aoPesquisar }: Props) => {
       />
       <BtnPesquisar type="submit">Pesquisar</BtnPesquisar>
     </Form>
-  );
-};
+  )
+}
 
-export default FormVagas;
-
+export default FormVagas

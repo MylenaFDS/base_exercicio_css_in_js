@@ -8,5 +8,3 @@ export const Header = styled.header`
   text-align: center;
   padding: 24px 0;
 `
-
-

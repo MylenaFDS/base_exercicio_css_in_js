@@ -1,5 +1,5 @@
-import React from 'react';
-import { VagaContainer, VagaTitulo, StyledVagaLink } from './styles';
+import React from 'react'
+import { VagaContainer, VagaTitulo, StyledVagaLink } from './styles'
 
 type Props = {
   titulo: string
@@ -9,7 +9,7 @@ type Props = {
   salarioMin: number
   salarioMax: number
   requisitos: string[]
-};
+}
 
 const Vaga: React.FC<Props> = ({
   titulo,
@@ -36,4 +36,3 @@ const Vaga: React.FC<Props> = ({
 )
 
 export default Vaga
-
