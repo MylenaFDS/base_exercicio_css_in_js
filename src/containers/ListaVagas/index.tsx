@@ -29,7 +29,8 @@ const vagas: VagaType[] = [
 
 const ListaVagas = () => {
   const [filtro, setFiltro] = useState<string>('')
-  const vagasFiltradas = vagas.filter((x) =>    x.titulo.toLowerCase(). includes(filtro.toLowerCase())
+  const vagasFiltradas = vagas.filter((x) =>
+    x.titulo.toLowerCase().includes(filtro.toLowerCase())
   )
 
   return (

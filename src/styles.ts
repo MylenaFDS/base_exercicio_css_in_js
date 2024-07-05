@@ -1,5 +1,5 @@
-import { createGlobalStyle } from 'styled-components';
-import styled from 'styled-components';
+import { createGlobalStyle } from 'styled-components'
+import styled from 'styled-components'
 
 // Definindo o estilo global
 const GlobalStyle = createGlobalStyle`
@@ -32,7 +32,7 @@ const GlobalStyle = createGlobalStyle`
       max-width: 80%;
     }
   }
-`;
+`
 
 export default GlobalStyle
 
@@ -45,6 +45,4 @@ export const Container = styled.div`
   @media (max-width: 1024px) {
     max-width: 80%;
   }
-`;
-
-
+`
