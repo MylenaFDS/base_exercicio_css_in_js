@@ -1,14 +1,14 @@
-import React from 'react'
-import { FormContainer, HeroTitle } from './styles' // Importando estilos de styles.ts
+import { Container } from '../../styles'
+import { Form, H2Title } from './styles'
 
 const Hero = () => (
-  <FormContainer>
-    <div className="container">
-      <HeroTitle>
+  <Form>
+    <Container>
+      <H2Title>
         As melhores vagas para tecnologia, design e artes visuais.
-      </HeroTitle>
-    </div>
-  </FormContainer>
+      </H2Title>
+    </Container>
+  </Form>
 )
 
 export default Hero
